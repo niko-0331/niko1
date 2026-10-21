@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>夜道のあしおと - ホラーADV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game">
+    <div id="stage" class="bg-street">
+      <div id="lamp"></div>
+      <div id="figure"></div>
+      <div id="vignette"></div>
+      <div id="flash"></div>
+    </div>
+
+    <div id="hud">
+      <div id="fearWrap">
+        <span>恐怖</span>
+        <div id="fearBar"><div id="fearFill"></div></div>
+      </div>
+      <button id="soundBtn" title="音のON/OFF">音: ON</button>
+    </div>
+
+    <div id="textbox" class="hidden">
+      <p id="text"></p>
+      <span id="nextMark">▼</span>
+    </div>
+    <div id="choices"></div>
+
+    <!-- タイトル画面 -->
+    <div id="title" class="overlay">
+      <p class="small">― 一人暮らしの女子大学生・美咲の三日間 ―</p>
+      <h1>夜道のあしおと</h1>
+      <p class="warn">※ストーカー被害を扱ったホラー作品です。<br>流血・暴力を示唆する描写があります。<br>ヘッドホン推奨 / 音が出ます</p>
+      <button id="startBtn">はじめる</button>
+      <p id="endingCount" class="small"></p>
+    </div>
+
+    <!-- エンディング画面 -->
+    <div id="ending" class="overlay hidden">
+      <h2 id="endTitle"></h2>
+      <p id="endSub"></p>
+      <p id="endNote"></p>
+      <button id="retryBtn">もう一度あそぶ</button>
+      <p id="endingCount2" class="small"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
